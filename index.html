@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="username">Bintang</div>
+            <div>Score: <span class="score">0</span></div>
+            <div>Time <span class="timer">00 : 00</span></div>
+        </div>
+        <div class="timer-start">3</div>
+        <canvas>
+
+        </canvas>
+        <div class="leadeboard">
+            <div>LEADEBOARD</div>
+            <button class="btn-sort">Sort by score <i class='bx bxs-down-arrow'></i></button>
+            <div class="col-history">
+
+            </div>
+        </div>
+        <div class="halaman-depan">
+            <div class="isi-content-halaman-depan">
+                <img src="shooter.png" width="180">
+                <form class="form-input" action="">
+                    <input type="text" class="input-username" placeholder="Input Username">
+                    <select name="level" id="input-level" class="input-level">
+                        <option value="" selected hidden>Pilih level</option>
+                        <option value="level 1">level 1</option>
+                        <option value="level 2">level 2</option>
+                        <option value="level 3">level 3</option>
+                    </select>
+                </form>
+                <div class="col-gun">
+                    <div class="content-gun">
+                        <img src="gun1.png" alt="" width="70px">
+                        <input class="input-radio" type="radio" name="gun" value="gun1.png">
+                    </div>
+                    <div class="content-gun">
+                        <img src="gun2.png" alt="" width="70px">
+                        <input class="input-radio" type="radio" name="gun" value="gun2.png">
+                    </div>
+                </div>
+                <div class="col-target">
+                    <div class="content-target">
+                        <img src="target1.png" alt="" width="70px">
+                        <input type="radio" class="input-radio-target" value="target1.png">
+                    </div>
+                    <div class="content-target">
+                        <img src="target2.png" alt=""  width="70px">
+                        <input type="radio" class="input-radio-target" value="target2.png">
+                    </div>
+                    <div class="content-target">
+                        <img src="target3.png" alt="" width="70px">
+                        <input type="radio" class="input-radio-target" value="target3.png">
+                    </div>
+                </div>
+                <div class="col-button">
+                    <button class="btn-play">Play Game</button>
+                    <button class="btn-instruction">Instruction</button>
+                </div>
+            </div>
+            <div class="col-instruksi">
+                <div class="title-instruksi">How to play game</div>
+                <div class="col-content-instruksi">
+                    <div>1.Input username</div>
+                    <div>2.Poin the pointer at the target</div>
+                    <div>3.Click to shoot</div>
+                    <div>4.Get as many points as possible</div>
+                    <div>5.Enjoy</div>
+                </div>
+                <div class="btn-close">X</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
