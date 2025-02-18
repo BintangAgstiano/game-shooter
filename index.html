@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+
+            <div class="popup-pause">
+                <h1>Game Pause</h1>
+                <div class="col-btn-pause">
+                    <button class="btn-continue-pause">Continue</button>
+                    <button class="btn-restart-pause">Restart</button>
+                </div>
+            </div>
+
+
+            <div class="popup-screen">
+                <div class="popup-instruksi">
+                    <h2>How to play game</h2>
+                    <div class="str">1.input Username</div>
+                    <div class="str">2.Point the pointer at the target</div>
+                    <div class="str">3.Click to shoot</div>
+                    <div class="str">4.Get as many points as possible</div>
+                    <div class="str">5.Enjoy!</div>
+                    <div class="box-close">X</div>
+                </div>
+                <img src="shooter.png" alt="">
+                <input type="text" class="input-name" placeholder="Input Username">
+                <select name="" id="" class="select-level">
+                    <option value="30">Level 1</option>
+                    <option value="20">Level 2</option>
+                    <option value="15">Level 3</option>
+                </select>
+                <div class="col-gun">
+                    <div class="box-gun">
+                        <img src="gun1.png" width="80" alt="">
+                        <input type="radio" class="radio-gun" name="radio-gun" value="gun1.png">
+                    </div>
+                    <div class="box-gun">
+                        <img src="gun2.png" width="80" alt="">
+                        <input type="radio" class="radio-gun" name="radio-gun" value="gun2.png">
+                    </div>
+                </div>
+                <div class="col-target">
+                    <div class="box-target">
+                        <img src="target1.png" width="80" alt="">
+                        <input type="radio" class="radio-target" name="radio-target" value="target1.png">
+                    </div>
+                    <div class="box-target">
+                        <img src="target2.png" width="80" alt="">
+                        <input type="radio" class="radio-target" name="radio-target" value="target2.png">
+                    </div>
+                    <div class="box-target">
+                        <img src="target3.png" width="80" alt="">
+                        <input type="radio" class="radio-target" name="radio-target" value="target3.png">
+                    </div>
+                </div>
+                <div class="col-btn-screen">
+                    <button class="btn-play">Play game</button>
+                    <button class="btn-instruction">Instruction</button>
+                </div>
+            </div>
+            <div class="popup-timer">
+                <div class="col-timer">3</div>
+            </div>
+            <div class="popup-gameover">
+                <h3>GAME OVER</h3>
+                <div class="col-name-gameover">
+                    <div class="name-gameover">Bintang</div>
+                    <div class="score-gameover">Score : 30</div>
+                </div>
+                <div class="col-btn-gameover">
+                    <button class="btn-save">Save match</button>
+                    <button class="btn-restart">Restart</button>
+                </div>
+            </div>
+            <div class="header">
+                <div class="username">Player name</div>
+                <div>Score : <span class="score">30</span></div>
+                <div>Time : <span class="timer"></span></div>
+            </div>
+            <canvas></canvas>
+            <div class="leadeboard">
+                <h1>LEADEBOARD</h1>
+                <button class="btn-sort">SORT BY SCORE</button>
+                <div class="content-leadebord">
+                    <!-- <div class="box-leadeboard">
+                        <div class="left">
+                            <div>Bintang</div>
+                            <div>Score : 12</div>
+                        </div>
+                        <div class="right">
+                            <button class="detail">Detail</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
